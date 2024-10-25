@@ -1,33 +1,21 @@
-/* Colors
-primary (cta) - #7bc682
-secondary (blue)- #5991ff
-danger (red shade) - #e76f6f
-
-spacing::
-Sir, is Global resetting font-size. Result 1rem = 10px,
-MINE font sizes will be the             1rem = 16px; I'll divide by 16
-If sir, needs 48px he'll write 4.8rem, 
-and when I need 48px I'll write 3rem (16x3)
-*/
-
 html {
   overflow-x: hidden;
 }
+
 body {
   /* works only, when "nothing absolutely positioned" in 'relation to body' */
   overflow-x: hidden;
 }
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   /* @media ka main-nav ke liye */
   position: relative;
 }
 
-
-.main-navi-list{
+.main-navi-list {
   margin-top: 10px;
   list-style: none;
   display: flex;
@@ -35,16 +23,18 @@ body {
   gap: 2rem;
 }
 
-.main-nav-links:link, .main-nav-links:visited{
+.main-nav-links:link, .main-nav-links:visited {
   display: inline-block;
   text-decoration: none;
   color: #3e66b3;
   font-size: 1.1rem;
   font-weight: 600;
 }
-.main-nav-links:hover, .main-nav-links:active{
-  color:  #5991ff;
+
+.main-nav-links:hover, .main-nav-links:active {
+  color: #5991ff;
 }
+
 .btn-adm:link, .btn-adm:visited {
   background-color: #7bc682;
   color: #fff;
@@ -52,7 +42,6 @@ body {
   text-decoration: none;
   font-size: 1.1rem;
   padding: 0.4rem 0.7rem;
-  
   font-weight: 500;
   border-radius: 9px;
   /* Only Necessary for btn */
@@ -62,6 +51,7 @@ body {
   /* put transitions on "original (main-btn) state" */
   transition: background-color 0.3s;
 }
+
 .btn-adm:hover, .btn-adm:active {
   background-color: #519558; /*hover will have deep color*/
 }
@@ -73,23 +63,22 @@ body {
   cursor: pointer;
   display: none;
 }
+
 .icon-mobile-nav {
   height: 3rem;
   width: 3rem;
   color: #333;
 }
-.icon-mobile-nav[name="close-outline"] {
+
+.icon-mobile-nav[name=close-outline] {
   display: none; /*close icon ko hide kar rhe,*/
 }
-
-
 
 /* ************************************************************************* */
 /*****************************  M E D I A    Q U E R Y ***********************/
 /* ************************************************************************* */
 @media (max-width: 59rem) {
   /* MOBILE NAVIGATION */
-  
   /* .header { 
     margin: 0 auto;
     width: 100%;
@@ -99,45 +88,40 @@ body {
     display: block;
     z-index: 9999;
   }
-
   .main-nav {
-    background-color: rgba(214, 153, 153, 0.97);
+    background-color: rgba(255, 255, 255, 0.97);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-
     transform: translateX(100%);
-  
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-in;
-      /* Hide the navigation */
-  /* display: none;  Doesn't allow to add animations, So the Other WAY is */
-/* 1) Hide it visually */
-  opacity: 0;
-  /* 2) Make it unaccessible to mouse and keyboard */
-  pointer-events: none;
-  /* 3) Hide it from screen readers */
-  visibility: hidden;
+    /* Hide the navigation */
+    /* display: none;  Doesn't allow to add animations, So the Other WAY is */
+    /* 1) Hide it visually */
+    opacity: 0;
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
   }
-
   /* And when it actually Opened (means in mobile devices) */
- .nav-open .main-nav{
+  .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-
     /* jab .nav-open khola jaye to, right side se menu sab aa jaye */
     transform: translateX(0);
     left: 0;
   }
-  .nav-open .icon-mobile-nav[name="close-outline"] {
+  .nav-open .icon-mobile-nav[name=close-outline] {
     display: block; /*close icon ko show kar rhe,*/
   }
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
+  .nav-open .icon-mobile-nav[name=menu-outline] {
     display: none; /*menu icon ko hide kar rhe,*/
   }
   .main-navi-list {
