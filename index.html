@@ -4,10 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- linking Google Fonts for icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
   <title>SJS, Torai</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/fontawesome.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Linking SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 </head>
 
@@ -17,12 +21,12 @@
   <div class="container">
     <header class="header">
       <a href="index.html">
-        <img src="images/sjsToraiLogo1.png" width="60px" class="logo" alt="logo of st. Joseph's School">
+        <img src="images/sjsToraiLogo1.png" width="80px" class="logo" alt="logo of st. Joseph's School">
       </a>
       <nav class="main-nav">
         <ul class="main-navi-list">
           <li><a href="index.html" class="main-nav-links">Home</a></li>
-          <li><a href="#" class="main-nav-links">About</a></li>
+          <li><a href="#about-us" class="main-nav-links">About</a></li>
           <li><a href="#" class="main-nav-links">Gallery</a></li>
           <li><a href="#" class="main-nav-links">Events</a></li>
           <li><a href="#" class="main-nav-links">Contact</a></li>
@@ -34,32 +38,318 @@
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
     </header>
-
-    
-    <h1 class="text-secondary text-center mt-4">Welcome to St. Joseph's School</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <p class="p-5 ">St. Joseph's School, Torai is established in 2011, amet consectetur adipisicing elit. Aspernatur dignissimos ab in harum
-            cupiditate voluptates, asperiores aliquid quod dolores unde. Quibusdam pariatur dolorum fugit iusto,
-            adipisci vitae debitis maxime doloremque, quod voluptates suscipit! Obcaecati dolore saepe error  ipsam beatae accusantium eius ab quod.</p>
-        </div>
-        <div class="col-md-6">
-          <img class="img-fluid hero-img mb-3" src="images/Hero.JPG" alt="">
-        </div>
+  </div> <!--HEADER CONTAINER ENDS-->
+  <div class="container">
+    <div class="news-ticker bg-light p-3 rounded">
+      <div class="d-flex align-items-center">
+        <span class="me-3 fw-bold">Latest:</span>
+        <marquee behavior="scroll" direction="left">
+          <a href="news1.html" class="text-dark me-4">Admission starts from Jan 10, 2025</a>
+        </marquee>
       </div>
     </div>
+  </div>
+    
+    <!-- HERO -->
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 py-5">
+          <h1 class=" mt-4 xl-text">Welcome to <span class="text-secondary">St. Joseph's School,</span> Torai</h1>
+          <p class="lead fs-3">Excellence in Service and Discipline</p>
+          <p class="p-1 ">This School is an English Medium co-educational institution and is governed by Dumka Catholic Diocese, which is a Religious and Charitable Organization, registered under the Societies.</p>
+          <a href="#about" class="btn btn-primary text-white me-4">Know more</a>
+          <button class="btn btn-outline-primary me-4">Contact Us</button>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid hero-img rounded-custom mb-3 mt-3" src="images/Hero.JPG" alt="">
+        </div>
+      </div> <!-- row ends-->
+    </div> <!--container ends-->
+
+    <!-- HERO ENDS -->
+
+    <!-- TEAMS SECTION -->
+    <div class="galleryBody">
+      <div class="gcontainer swiper team-swiper ">
+        <div class="cards-wrapper swiper-container">
+          <h2 class="gallery-title text-center p-3">KEY MEMBERS</h2>
+            <ul class="cards-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <div class="ccard">
+                        <img src="images/SarafatKr.webp" alt="">
+                        <h2>Sarafat Kumar</h2>
+                        <h3>CSC Operator</h3>
+                        <p>Very helpful and friendly person in his area.</p>
+                      </div>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <div class="ccard">
+                        <img src="images/Alok.webp" alt="">
+                        <h2>Alok Kumar</h2>
+                        <h3>CSC Operator</h3>
+                        <p>Very helpful and friendly person in his area.</p>
+                      </div>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <div class="ccard">
+                        <img src="images/Amitkumar.webp" alt="">
+                        <h2>Amit Kumar</h2>
+                        <h3>CSC Operator</h3>
+                        <p>Very helpful and friendly person in his area.</p>
+                      </div>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <div class="ccard">
+                        <img src="images/Krishna.jpg" alt="">
+                        <h2>Krishna Kumar</h2>
+                        <h3>CSC Operator</h3>
+                        <p>Very helpful and friendly person in his area.</p>
+                      </div>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <div class="ccard">
+                        <img src="images/SanjayKumar.webp" alt="">
+                        <h2>Sanjay Kumar</h2>
+                        <h3>CSC Operator</h3>
+                        <p>Very helpful and friendly person in his area.</p>
+                      </div>
+                    </a>
+                </li>
+            </ul>
+      
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+      
+      </div> <!--Gallery container ENDS-->
+      
+      </div>
+      <!--modified classes from gallery carousel. cards-wrapper & cards-list -->
+      <!-- GALLERY ENDS-->
+      
+      
+      <!-- NEWS SECTION -->
 
 
-    <button class="btn btn-primary me-4">Know more</button>
+
+    <!-- TEAMS SECTION -->
+    
+      <!-------- PRINCIPAL MESSAGE SECTION ------->
+      <section id="about-us" class="p-5 mt-5 bg-white">
+        <div class="container">
+          
+          <div class="row">
+              <div class="col-sm-4">
+                <div class="d-flex justify-content-center align-items-center" style="height: 250px;">
+                  <img src="images/principal.jpg" alt="Principal" class="rounded-circle principal-img ">
+                </div>
+              </div>
+              <div class="col-sm-8">
+              <h2 class="principal-name">Principal's Message</h2>
+              <p>Welcome to our school! As the principal, I am proud of our dedicated staff and the supportive community that fosters a love of learning. Our goal is to provide a safe, nurturing environment where every student can thrive. We are committed to preparing our students for the challenges of tomorrow with a well-rounded education that emphasizes academic excellence, personal growth, and social responsibility.</p>
+              <h5 class="mb-0">Fr. Charles Hansdak</h5>
+              <p class="fw-bold">Principal, St. Joseph's School, Torai</p>
+            </div>
+            
+         
+        </div>
+        </div>
+      </section>
+      
+      <!-------- ABOUT US ------->
+      <section class="py-5 about-us" id="about">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h2 class="fw-bold">About Us</h2>
+              <h4 class="text-secondary">Who We Are</h4>
+              <p class="mb-4">
+               St. Joseph's School, Torai is ESTABLISHED and ADMINISTERED by DUMKA CATHOLIC DIOCESE. The School was blessed and inaugurated on 11th April, 2017 by <strong> Most Rev. Julius Marandi</strong>, Bishop of Dumka.
+              </p>
+              <p class="mb-4">
+                Dumka Catholic Diocese runs several schools in Jharkhand and West Bengal in which children belonging to every creed, social class, community and liguistic group are educated...
+              </p>
+              <a href="aboutus.html" class="btn btn-primary text-white">Read More</a>
+            </div>
+            <div class="col-md-6">
+              <img src="images/admins.JPG" class="img-fluid rounded" alt="About Us Image">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACADEMICS -->
+       <section class="py-5">
+  <div class="container">
+    <h2 class="academics-title text-center text-secondary mb-5">ACADEMICS</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="fw-bold">Nursery School</h2>
+        <p class="text-secondary">Our nursery school provides a nurturing environment for young children to learn and grow. We focus on developing social, emotional, and cognitive skills through play-based learning.</p>
+        <ul>
+          <li>Play-based curriculum</li>
+          <li>Qualified and caring teachers</li>
+          <li>Safe and stimulating environment</li>
+        </ul>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bold">Middle School</h2>
+        <p class="text-secondary">Our middle school offers a comprehensive education that prepares students for high school and beyond. We emphasize critical thinking, creativity, and collaboration.</p>
+        <ul>
+          <li>Strong academic foundation</li>
+          <li>Extracurricular activities</li>
+          <li>Supportive learning community</li>
+        </ul>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<div class="galleryBody">
+<div class="gcontainer swiper">
+  <div class="card-wrapper swiper-container">
+    <h2 class="gallery-title text-center p-3">GALLERY</h2>
+      <ul class="card-list swiper-wrapper">
+          <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                  <img src="images/cultural.jpg" alt="cultural activity" class="card-image">
+                  <p class="badge cultural">Cultural</p>
+                  <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                  <button class="material-symbols-rounded card-button">
+                      arrow_forward
+                  </button>
+              </a>
+          </li>
+          <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                  <img src="images/recreational.jpg" alt="recreational activities" class="card-image">
+                  <p class="badge recreational">Recreational</p>
+                  <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                  <button class="material-symbols-rounded card-button">
+                      arrow_forward
+                  </button>
+              </a>
+          </li>
+          <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                  <img src="images/sports.jpg" alt="sports picture of St. Joseph school" class="card-image">
+                  <p class="badge sports">Sports</p>
+                  <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                  <button class="material-symbols-rounded card-button">
+                      arrow_forward
+                  </button>
+              </a>
+          </li>
+          <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                  <img src="images/teachersday.jpg" alt="teachers day celebration at St. Joseph's school" class="card-image">
+                  <p class="badge teachersday">Teachers' Day</p>
+                  <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                  <button class="material-symbols-rounded card-button">
+                      arrow_forward
+                  </button>
+              </a>
+          </li>
+          <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                  <img src="images/sports2.jpg" alt="sports day at St. Joseph's school" class="card-image">
+                  <p class="badge sports">Sports</p>
+                  <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                  <button class="material-symbols-rounded card-button">
+                      arrow_forward
+                  </button>
+              </a>
+          </li>
+      </ul>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-slide-button swiper-button-prev"></div>
+      <div class="swiper-slide-button swiper-button-next"></div>
+  </div>
+
+</div> <!--Gallery container ENDS-->
+
+</div>
+<!-- GALLERY ENDS-->
+
+
+<!-- NEWS SECTION -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">Latest News</h2>
+    <div class="news-ticker bg-light p-3 rounded">
+      <div class="d-flex align-items-center">
+        <span class="me-3 fw-bold">Latest:</span>
+        <marquee behavior="scroll" direction="left">
+          <a href="news1.html" class="text-dark me-4">News Headline 1</a>
+          <a href="news2.html" class="text-dark me-4">News Headline 2</a>
+          <a href="news3.html" class="text-dark me-4">News Headline 3</a>
+          <a href="news4.html" class="text-dark">News Headline 4</a>
+        </marquee>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+      <!-------- FOOTER ------->
+      <footer class="bg-dark text-white pt-4">
+        <div class="container">
+          <div class="row">
+            <!-- First Column -->
+            <div class="col-md-4">
+              <h5>About Us</h5>
+              <p>A registered society under the Societies Registration Act. 1860</p>
+            </div>
+            <!-- Second Column -->
+            <div class="col-md-4">
+              <h5>Contact</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Email: info@example.com</a></li>
+                <li><a href="#" class="text-white">Phone: +123 456 7890</a></li>
+                <li><a href="#" class="text-white">Address: Torai, Dist- Pakur</a></li>
+              </ul>
+            </div>
+            <!-- Social Icons Column -->
+            <div class="col-md-4">
+              <h5>Follow Us</h5>
+              <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="text-center py-3">
+            © 2024 OnlineJohn. All rights reserved.
+          </div>
+        </div>
+      </footer>
+      
+      
   
 
 
-  </div>
+  <!-- </div> -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+   <!-- Linking SwiperJS Script -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- Linking custom script -->
+   <script src="js/script.js"></script>
 </body>
-
 </html>
