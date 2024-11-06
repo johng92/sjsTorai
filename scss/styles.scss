@@ -377,7 +377,7 @@ html {
       opacity: 1;
       pointer-events: auto;
       visibility: visible;
-  
+      z-index: 9998;
       /* jab .nav-open khola jaye to, right side se menu sab aa jaye */
       transform: translateX(0);
       left: 0;
@@ -401,11 +401,82 @@ html {
  
   }
 
+  /* 48rem == 768px */
   @media screen and (max-width: 48rem) {
+    // hero
+    .hero-img {
+      max-height: 450px; /* Adjust image height for desktop */
+    }
+    .xl-text {
+      font-size: 3rem; /* Large font for desktop */
+    }
+
+    // gallery 
     .card-wrapper {
         margin: 0 10px 25px;
     }
     .card-wrapper .swiper-slide-button {
         display: none;
     }
+}
+/* Responsive Hero Section for Small Devices */
+@media (max-width: 47.9375rem) { /* 767px */
+
+  
+  /* Stack content vertically on small screens */
+  .col-md-6.py-5.hero-textbox {
+    padding-top: 1rem !important; /* Reduce top padding */
+    padding-bottom: 1rem !important; /* Reduce bottom padding */
+  }
+
+  .row.hero-row {
+    display: block;
+    text-align: center;
+  }
+
+  .hero-img {
+    order: -1; /* Move image to the top */
+    margin: 1rem auto;
+    max-width: 80%; /* Make image smaller for mobile */
+    border-radius: 10px;
+  }
+  .xl-text {
+    font-size: 1.7rem; /* Adjust font size for smaller devices */
+    margin: 1rem 0 0.5rem;
+  }
+
+  .lead {
+    font-size: 1.2rem; /* Subheading font size */
+  }
+
+  .container p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+//Prinicipal message
+#principal {
+  margin-top: 5px !important;
+  padding: 1rem !important;
+}
+#about {
+  padding: 1rem !important;
+}
+
+  /* Adjust button sizes */
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+  .about-btn {
+    margin-bottom: 10px;
+    text-align: end;
+  }
+  .about-button-container {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .academic-btn {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
 }
