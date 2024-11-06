@@ -458,6 +458,13 @@ body {
   #about {
     padding: 1rem !important;
   }
+  #academics {
+    padding: 1rem !important;
+  }
+  .academics-title.text-center.text-secondary.mb-5 {
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+  }
   /* Adjust button sizes */
   .btn {
     font-size: 0.9rem;
