@@ -13,6 +13,7 @@ html {
     display: flex;
     // align-items: center; Commented OUT to fixed stickey navigation
     justify-content: space-between;
+    align-items: center; //added+ to fix, the menu-btn aligning to center , Vertically
   
     /* @media ka main-nav ke liye */
     position: relative;

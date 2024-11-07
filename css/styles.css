@@ -12,6 +12,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   /* @media ka main-nav ke liye */
   position: relative;
 }
