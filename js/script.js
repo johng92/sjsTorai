@@ -8,6 +8,42 @@ const headerEl = document.querySelector('.header');
 btnNavEl.addEventListener('click', function(){
     headerEl.classList.toggle('nav-open');
 })
+
+// Select all navigation links inside the main-nav element
+const navLinks = document.querySelectorAll('.main-nav .main-nav-links');
+
+// Close the mobile menu when any nav link is clicked
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    // Remove the nav-open class to close the menu
+    headerEl.classList.remove('nav-open');
+  });
+});
+/////////////////////////////////
+/// STICKY NAVIGATION
+const sectionHeroEl = document.querySelector('.hero');
+
+const obs = new IntersectionObserver(
+    function (entries){
+    const ent = entries[0];
+    console.log(ent);
+
+    if(ent.isIntersecting === false){
+        document.body.classList.add('stickey');  
+    }
+
+    if(ent.isIntersecting ===true){
+        document.body.classList.remove('stickey');  
+    }
+}, 
+    {
+    //In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: '-80px',  //in this code only px is accepted (height of the- .sticky.header class i.e. 5rem)
+});
+obs.observe(sectionHeroEl);
+
 /////////////////////////////////
 // CAROUSEL WITH SWIPER JS FOR TEAMS//////
 /////////////////////////////////

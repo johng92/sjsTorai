@@ -14,7 +14,8 @@ html {
     // align-items: center; Commented OUT to fixed stickey navigation
     justify-content: space-between;
     align-items: center; //added+ to fix, the menu-btn aligning to center , Vertically
-  
+    height: 4.43rem;
+    padding: 0 3rem;
     /* @media ka main-nav ke liye */
     position: relative;
   }
@@ -78,14 +79,20 @@ html {
   }
   
   // STICKY NAVIGATION
-  .stickey {
+  .stickey .header{
     position: fixed;
     top: 0;
     bottom: 0;
     width: 100%;
-    height: 80px; //height added to fix, nav's bg color taking whole viewport height.
+    height: 5rem; //height added to fix, nav's bg color taking whole viewport height.
+    padding-top: 0;
+    padding-bottom: 0;
     background-color: rgb(255, 255, 255, 0.97);
     z-index: 999;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.03);
+  }
+  .stickey .hero {
+    margin-top: 4.43rem;
   }
   // HOME PAGE STYLING
   .lead {
@@ -357,7 +364,8 @@ html {
     .btn-mobile-nav {
       display: block;
       z-index: 9999;
-      height: 32px; /*added, to fix btn position to top--while adding sticky nav functionality*/
+      // height: 32px; - Commented out on 8.11.24 , Because it is working fine ,without adding height
+       /*added, to fix btn position to top--while adding sticky nav functionality 7.11.24*/
     }
   
     .main-nav {
@@ -392,7 +400,6 @@ html {
       z-index: 9998;
       /* jab .nav-open khola jaye to, right side se menu sab aa jaye */
       transform: translateX(0);
-      left: 0;
     }
     .nav-open .icon-mobile-nav[name="close-outline"] {
       display: block; /*close icon ko show kar rhe,*/
