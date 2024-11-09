@@ -44,6 +44,25 @@ const obs = new IntersectionObserver(
 });
 obs.observe(sectionHeroEl);
 
+///////HERRO TTILE typing....
+// Text to type out
+const text = "Service and Discipline";
+let index = 0;
+let currentText = "";
+
+// Function to type each character
+function typeText() {
+    if (index < text.length) {
+        // Typing the full phrase "Service and Discipline"
+        currentText += text[index];
+        document.getElementById("typed-text").innerText = currentText;
+        index++;
+        setTimeout(typeText, 150); // Adjust the speed here
+    }
+}
+
+// Trigger the typing animation once the page loads
+window.onload = typeText;
 /////////////////////////////////
 // CAROUSEL WITH SWIPER JS FOR TEAMS//////
 /////////////////////////////////
