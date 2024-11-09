@@ -366,6 +366,97 @@ body {
   padding: 0; /* Remove default padding */
 }
 
+.table-container {
+  max-width: 850px;
+  margin: auto;
+  border: 1px solid grey;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding-bottom: 50px; /* Space for add to calendar button */
+}
+
+.table {
+  padding: 40px !important;
+  margin-left: 10px;
+  max-width: 810px;
+}
+
+.header-row {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.header-row .badge {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 8px;
+  font-size: 0.9rem;
+}
+
+.chevron-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.table-container .table .date-row {
+  background: #c4cbcb !important;
+  font-weight: bold;
+  padding: 8px 10px;
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+.event-row {
+  background-color: #ffffff;
+  padding: 8px 10px;
+  border: 1px solid grey;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #0d6efd;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.time-col {
+  padding-right: 20px;
+}
+
+.add-calendar-btn {
+  bottom: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 767px) {
+  .table-container {
+    border: none;
+  }
+  .table {
+    margin: 0;
+  }
+}
+.enquiry {
+  background: linear-gradient(#d8f2f2, #f7fbfb);
+}
+
 /* ************************************************************************* */
 /*****************************  M E D I A    Q U E R Y ***********************/
 /* ************************************************************************* */
@@ -501,5 +592,8 @@ body {
   .academic-btn {
     text-align: center;
     margin-bottom: 1.5rem;
+  }
+  .table-container {
+    border: none;
   }
 }
