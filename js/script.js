@@ -140,3 +140,22 @@ new Swiper('.card-wrapper', {
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
+
+//OWL CAROUSEL SCRIPT
+$('.testimonials-container').owlCarousel({
+    loop:true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    margin:10,
+    nav:true,
+    navText:["<i class='fa-solid fa-arrow-left'></i>",
+             "<i class='fa-solid fa-arrow-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+    }
+})
