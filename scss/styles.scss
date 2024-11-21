@@ -385,7 +385,8 @@ html {
   box-shadow: 0 3px 6px rgba(0,0,0,0.23);
 }
 .wrapper i:first-child{
-  left: -22px;
+  left: -26px;
+  z-index: 7;
 }
 .wrapper i:last-child{
   right: -22px;
@@ -484,7 +485,6 @@ html {
   padding: 40px !important;
   margin-left: 10px;
  max-width: 810px;
-  
 }
 .header-row {
   background-color: #ffffff;

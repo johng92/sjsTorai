@@ -405,7 +405,8 @@ body {
 }
 
 .wrapper i:first-child {
-  left: -22px;
+  left: -26px;
+  z-index: 7;
 }
 
 .wrapper i:last-child {
