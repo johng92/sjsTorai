@@ -44,7 +44,7 @@
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
     </header>
-  </div> <!--HEADER CONTAINER ENDS-->
+  </div> <!--HEADERCONTAINER ENDS-->
   <!--Notice-->
   <div class="container">
     <div class="news-ticker bg-light p-3 rounded">
@@ -59,13 +59,14 @@
     
     <!-- HERO -->
     <div class="container hero">
-      <div class="row align-items-center hero-row">
+      <div class="row align-items-center hero-row pb-lg-5 pt-lg-5">
         <div class="col-md-6 py-5 hero-textbox">
           <h1 class=" mt-4 xl-text">Welcome to <span class="text-secondary">St. Joseph's School,</span> Torai</h1>
           <p class="lead fs-3">Excellence in <span class="text-secondary" id="typed-text">Service and Discipline</span></p>
-          <p class="p-1 ">This School is an English Medium co-educational institution and is governed by Dumka Catholic Diocese, which is a Religious and Charitable Organization, registered under the Societies.</p>
+          <p class="p-1 ">This School is an English Medium co-educational institution (ICSE Board) and is governed by Dumka Catholic Diocese, which is a Religious and Charitable Organization, registered under the Societies.</p>
           <a href="#about" class="btn btn-primary text-white me-4">Know more</a>
-          <button class="btn btn-outline-primary me-4">Contact Us</button>
+          <!-- <button href="#contact" class="btn btn-outline-primary me-4">Contact Us</button> -->
+          <a href="#contact" class="btn btn-outline-primary me-4">Contact Us</a>
         </div>
         <div class="col-md-6">
           <img class="img-fluid hero-img rounded-custom mb-3 mt-3" src="images/Hero.JPG" alt="">
@@ -236,7 +237,7 @@
           <li class="card-item swiper-slide">
               <a href="#" class="card-link">
                   <img src="images/cultural.jpg" alt="cultural activity" class="card-image">
-                  <p class="badge cultural">Cultural</p>
+                  <p class="badge cultural">Events</p>
                   <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                   <button class="material-symbols-rounded card-button">
                       arrow_forward
@@ -299,19 +300,32 @@
 <!-- NEWS SECTION -->
 <section class="py-5">
   <div class="container">
-    <h2 class="fw-bold text-center mb-4">Latest News</h2>
-    <div class="news-ticker bg-light p-3 rounded">
-      <div class="d-flex align-items-center">
-        <span class="me-3 fw-bold">Latest:</span>
-        <marquee behavior="scroll" direction="left">
-          <a href="news1.html" class="text-dark me-4">News Headline 1</a>
-          <a href="news2.html" class="text-dark me-4">News Headline 2</a>
-          <a href="news3.html" class="text-dark me-4">News Headline 3</a>
-          <a href="news4.html" class="text-dark">News Headline 4</a>
-        </marquee>
-      </div>
-    </div>
-  </div>
+    <h3 class="fw-bold text-center mb-5">Recent News</h3>
+    <div class="row mb-6">
+      <div class="col-lg-6">
+        <div class="d-flex">
+        <img src="images/foundation_day.jpg" width="200px" height="auto" alt="">
+        <div class="news-text-box ms-2">
+          <h2 class="text-dark">Foundation day celebrated</h2>
+          <p>November 14, 2024</p>
+          <button class="btn btn-outline-dark">Read more..</button>
+        </div>
+        </div> <!--d-flex ends-->
+      </div><!--col-lg-6 ends-->
+
+      <div class="col-lg-6">
+        <div class="d-flex">
+        <img src="images/voter_awareness.jpg" width="200px" alt="">
+        <div class="news-text-box ms-2">
+          <h2 class="text-dark">Voter Awareness Program</h2>
+          <p>November 20, 2024</p>
+          <button class="btn btn-outline-dark">Read more..</button>
+        </div>
+        </div> <!--d-flex ends-->
+      </div><!--col-lg-6 ends-->
+
+  </div> <!--row ends-->
+  </div> <!--container ends-->
 </section>
 
 <section class="teachers">
