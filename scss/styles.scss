@@ -357,6 +357,16 @@ html {
 
 .swiper-container { padding: 0; /* Remove default padding */ }
 
+//NEWS SECTION
+.news-container{
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.news-img{
+  display: inline-block;
+  margin-right: 15px;
+  border-radius: 8px;
+}
 //TEACHERS SECTION
 .teacher-box{
   display: flex;
@@ -775,6 +785,32 @@ $heading-color: $dark;
     }
     .card-wrapper .swiper-slide-button {
         display: none;
+    }
+    // news 
+    .news-container{
+      padding: 1.5rem;
+    }
+    .news_card { 
+      border: none; 
+      border-radius: 0; 
+    } 
+    .card-img-top { 
+      max-height: 450px; 
+      object-fit: cover; 
+    } 
+    .news-card-title {
+      font-size: 2rem; 
+      font-weight: bold; 
+    } 
+    .news-card-text { 
+      font-size: 1rem; 
+    } 
+    .btn-outline-primary { 
+      margin-top: 20px;
+    }
+
+    .events{
+      padding: 1.1rem;
     }
 }
 /* Responsive Hero Section for Small Devices */
