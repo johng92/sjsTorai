@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- linking Google Fonts for icons -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
   <title>SJS, Torai</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/fontawesome.css">
@@ -17,7 +18,7 @@
 
 <body>
 
-  
+
   <div class="headercontainer">
     <header class="header">
       <a href="index.html">
@@ -39,9 +40,105 @@
       </button>
     </header>
   </div> <!--HEADER CONTAINER ENDS-->
-<main>
-    <h1 class="text-center">Admissions</h1>
-</main>
+  <main>
+    <div class="container">
+      <h1 class="text-center pt-5 mb-5">Admission Process</h1>
+      <h2>Requirements for the submission of Application Form.</h2>
+      <ol class="p-3">
+        <li>A photostate copy of the Birth Certificate of the Applicant from Municipal Corporation/Block/Hospital, where
+          the Applicant was born. Affidavit without proper documental proof shall not be entertained.</li>
+        <li>Two (2) recent postal size colour photographs of the Applicant.</li>
+        <li>One (1) recent post card size photograph of the Applicant with parents.</li>
+        <li>A self-addressed envelop duly stamped.</li>
+        <li>A Medical Certificate of fitness from doctor.</li>
+      </ol>
+    </div>
+    <!-- APPLICATION FORM -->
+    <div class="container my-5">
+      <h2 class="text-center mb-5">Application Form</h2>
+      <form id="application-form" enctype="multipart/form-data"> <!-- Form Number (to be managed in Django) -->
+        <div class="mb-3"> <label for="form-no" class="form-label">Form No.</label> <input type="text"
+            class="form-control" id="form-no" readonly> </div> <!-- Student Photo -->
+        <div class="mb-3"> <label for="student-photo" class="form-label">Student Photo</label> <input type="file"
+            class="form-control" id="student-photo" accept="image/*" capture="camera" required> </div>
+        <!-- Student Information -->
+        <div class="row mb-3">
+          <div class="col-md-6"> <label for="student-name" class="form-label">Name</label> <input type="text"
+              class="form-control" id="student-name" required> </div>
+          <div class="col-md-6"> <label for="dob" class="form-label">Date of Birth</label> <input type="date"
+              class="form-control" id="dob" required> </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6"> <label for="sex" class="form-label">Sex</label> <select class="form-select" id="sex"
+              required>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select> </div>
+          <div class="col-md-6"> <label for="religion" class="form-label">Religion</label> <input type="text"
+              class="form-control" id="religion"> <small class="form-text text-muted">If Catholic, specify.</small>
+          </div>
+        </div> <!-- Parent Information -->
+        <div class="row mb-3">
+          <div class="col-md-6"> <label for="father-name" class="form-label">Name of Father</label> <input type="text"
+              class="form-control" id="father-name" required> </div>
+          <div class="col-md-6"> <label for="father-qualification" class="form-label">Qualification</label> <select
+              class="form-select" id="father-qualification" required>
+              <option value="" disabled selected>Choose the Qualification</option>
+              <option value="Graduated">Graduated</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Matric">Matric</option>
+              <option value="Non-Metric">Non-Metric</option>
+            </select> </div>
+        </div>
+        <div class="mb-3"> <label for="father-occupation" class="form-label">Occupation of the Father</label> <input
+            type="text" class="form-control" id="father-occupation" required> </div>
+        <div class="row mb-3">
+          <div class="col-md-6"> <label for="mother-name" class="form-label">Name of Mother</label> <input type="text"
+              class="form-control" id="mother-name" required> </div>
+          <div class="col-md-6"> <label for="mother-qualification" class="form-label">Qualification</label> <select
+              class="form-select" id="mother-qualification" required>
+              <option value="" disabled selected>Choose the Qualification</option>
+              <option value="Graduated">Graduated</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Matric">Matric</option>
+              <option value="Non-Metric">Non-Metric</option>
+            </select> </div>
+        </div>
+        <div class="mb-3"> <label for="mother-occupation" class="form-label">Occupation of the Mother</label> <input
+            type="text" class="form-control" id="mother-occupation" required> </div> <!-- Contact Information -->
+        <div class="mb-3"> <label for="address" class="form-label">Address</label> <textarea class="form-control"
+            id="address" rows="3" required></textarea> </div>
+        <div class="mb-3"> <label for="tel" class="form-label">Tel/Mob. No.</label> <input type="tel"
+            class="form-control" id="tel" required> </div> <!-- Previous School Information -->
+        <div class="mb-3"> <label for="previous-school" class="form-label">Name & Place of the School Previously
+            Attended</label> <input type="text" class="form-control" id="previous-school"> </div>
+        <div class="row mb-3">
+          <div class="col-md-6"> <label for="previous-class" class="form-label">Class in Which the Applicant Was
+              Studying</label> <input type="text" class="form-control" id="previous-class"> </div>
+          <div class="col-md-6"> <label for="reason-leaving" class="form-label">Reason for Leaving</label> <input
+              type="text" class="form-control" id="reason-leaving"> </div>
+        </div>
+        <div class="mb-3"> <label for="admission-class" class="form-label">Class in Which Admission Is Sought</label>
+          <input type="text" class="form-control" id="admission-class" required> </div> <!-- Additional Information -->
+        <div class="mb-3"> <label for="siblings" class="form-label">Does the Applicant Have Any Brother/Sister Studying
+            in This School? If Yes, Specify</label> <input type="text" class="form-control" id="siblings"> </div>
+        <div class="mb-3"> <label for="disability" class="form-label">Does the Applicant Suffer from Any
+            Disability/Illness? If Yes, Specify</label> <input type="text" class="form-control" id="disability"> </div>
+        <!-- Declaration -->
+        <div class="mb-3 form-check"> <input type="checkbox" class="form-check-input" id="declaration-check" required>
+          <label class="form-check-label" for="declaration-check"> I certify that the details furnished above are
+            correct and true and that I will not require any change in the given details. </label> </div>
+        <div class="row mb-3">
+          <div class="col-md-6"> <label for="date" class="form-label">Date</label> <input type="date"
+              class="form-control" id="date" required> </div>
+          <div class="col-md-6"> <label for="signature" class="form-label">Signature of Parent</label> <input
+              type="file" class="form-control" id="signature" accept="image/*" capture="camera" required> </div>
+        </div> <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <!-- APPLICATION FORM ENDS -->
+  </main>
   <!-------- FOOTER ------->
   <footer class="bg-dark text-white pt-4">
     <div class="container">
@@ -75,18 +172,19 @@
       </div>
     </div>
   </footer>
-  
-  
 
 
 
-<!-- </div> -->
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<!-- Linking SwiperJS Script -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<!-- Linking custom script -->
-<script src="js/script.js"></script>
+
+
+  <!-- </div> -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Linking SwiperJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Linking custom script -->
+  <script src="js/script.js"></script>
 </body>
+
 </html>
